@@ -11,8 +11,16 @@ class MainController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
+    // Show the 'home' page
     public function index()
     {
         return view('index');
+    }
+
+
+    // Show a list of the user's books
+    public function show()
+    {
+        return view('user_book_list');
     }
 }

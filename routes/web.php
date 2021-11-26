@@ -14,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome')->name('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 
-// Route::get('/', [MainController::class, 'index'])->name('home'); // Route for the 'Start side'
+Route::get('/', [MainController::class, 'index'])->name('home'); // Route for the 'Start side'
+Route::get('user_book_list', [MainController::class, 'show'])->name('user_book_list');  // List of the user's book
