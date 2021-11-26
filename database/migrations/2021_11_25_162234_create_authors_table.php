@@ -16,9 +16,10 @@ class CreateAuthorsTable extends Migration
         Schema::create('authors', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->unsignedBigInteger('publisher_id');
             $table->string('name');
             $table->string('description');
-            $table->string('author_type');  // Crime-fiction author, horror, fiction?
+//            $table->string('author_type');  // Crime-fiction author, horror, fiction?
             $table->integer('age');
 
 

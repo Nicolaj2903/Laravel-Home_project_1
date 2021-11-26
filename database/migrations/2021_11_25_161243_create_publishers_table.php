@@ -17,7 +17,7 @@ class CreatePublishersTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('publisher_name');
-            $table->string('author_list');
+//            $table->string('author_list');
         });
     }
 
