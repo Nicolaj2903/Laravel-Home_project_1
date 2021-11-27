@@ -17,7 +17,7 @@
        <br>
        <u1>
            @foreach($books as $book)   {{-- '$books' is the variable from the 'BookMainController -> index()'--}}
-           <li><a href="/books/1">{{ $book->title }}</a></li>  {{-- Iterates through every book in the DB and shows the title of the book --}}
+           <li><a href="/books/{{$book->id}}">{{ $book->title }}</a></li>  {{-- Iterates through every book in the DB and shows the title of the book --}}
            @endforeach
        </u1>
    </div>
