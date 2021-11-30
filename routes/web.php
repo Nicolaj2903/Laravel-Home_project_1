@@ -27,4 +27,4 @@ Route::get('/', [MainController::class, 'index'])->name('home'); // Route for th
 Route::get('user_book_list', [BookMainController::class, 'index'])->name('user_book_list');  // List of the user's book
 Route::get('publisher_list', [PublisherMainController::class, 'publishers_list'])->name('list_of_publishers');
 Route::get('books/{book}', [BookMainController::class, 'show'])->name('show_individual_books'); // the {book} in 'book/{book}' should match the model
-Route::post('books/{book}/author', [AuthorMainController::class, 'store']);
+Route::post('books/{book}/authors', [AuthorMainController::class, 'store']);

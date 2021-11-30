@@ -17,7 +17,7 @@
 
     <br>
     <h3>Add book</h3>
-    <form action="/books/{{ $book->id }}/ authors" method="post">
+    <form action="/books/{{ $book->id }}/authors" method="post">
         @csrf
         <label>Book:</label>
         <input type="text" name="name" placeholder="Book name">
