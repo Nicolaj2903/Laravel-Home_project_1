@@ -11,8 +11,10 @@
 
 
     <ul>
-        <li>Book 1 - <a href="#">Remove</a></li>
-        <li>Book 2 - <a href="#">Remove</a></li>
+{{--        @foreach($book->authors as $author)--}}
+        <li>{{$book->title}} - <a href="#">Remove</a></li>
+{{--        @endforeach--}}
+
     </ul>
 
     <br>
